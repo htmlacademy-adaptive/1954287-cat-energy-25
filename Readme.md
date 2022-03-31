@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Антон Курдин](https://up.htmlacademy.ru/adaptive/25/user/1954287).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
