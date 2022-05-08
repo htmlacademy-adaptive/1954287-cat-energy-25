@@ -2,59 +2,65 @@
 <html class="page" lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
     <!--  Шапка  -->
     <header class="page-header">
-      <a class="page-header__logo-image" href="index.html">
-        <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Логотип-картинка 'Кэт энерджи'.">
-      </a>
-      <a class="page-header__logo-title" href="index.html">
-        <img src="img/logos/logo-title.svg" width="101" height="18" alt="Логотип-заголовок 'Кэт энерджи'.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo-image" href="index.html">
+          <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Логотип-картинка 'Кэт энерджи'.">
+        </a>
+        <a class="page-header__logo-title" href="index.html">
+          <img src="img/logos/logo-title.svg" width="101" height="18" alt="Логотип-заголовок 'Кэт энерджи'.">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--current">
+                <a class="main-nav__link">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main main-inner">
       <!--  Заголовок с описанием  -->
-      <h1 class="main-inner__title">
-        Подбор программы
-      </h1>
-      <p class="main-inner__text">
-        Заполните анкету, и мы подберем
-        программу питания для вашего кота
-      </p>
+      <div class="page-main__container">
+        <h1 class="main-inner__title main-inner__title--form">
+          Подбор программы
+        </h1>
+        <p class="main-inner__text">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+      </div>
 
       <!--  Форма подбора программы  -->
-      <form class="program-form" action="https://echo.htmlacademy.ru" method="POST">
+      <form class="main-inner__program-form program-form" action="https://echo.htmlacademy.ru" method="POST">
 
         <!--  Форма: информация о питомце  -->
-        <fieldset class="program-form__field-group field-group">
+        <fieldset class="program-form__field-group program-form__field-group--cat-info field-group">
           <legend class="visually-hidden">Информация о коте</legend>
           <ul class="field-group__list">
             <li class="field-group__item">
@@ -79,7 +85,7 @@
         </fieldset>
 
         <!--  Форма: цель программы  -->
-        <fieldset class="program-form__field-group field-group">
+        <fieldset class="program-form__field-group program-form__field-group--category field-group">
           <legend class="visually-hidden">Выбор категории товара</legend>
           <ul class="field-group__list">
             <li class="field-group__item">
@@ -104,7 +110,7 @@
         </fieldset>
 
         <!--  Форма: контакты владельца  -->
-        <fieldset class="program-form__field-group field-group">
+        <fieldset class="program-form__field-group program-form__field-group--owner-contacts field-group">
           <legend class="field-group__title">Контактные данные (владельца кота)</legend>
           <ul class="field-group__list">
             <li class="field-group__item">
@@ -123,14 +129,14 @@
         </fieldset>
 
         <!--  Форма: информация о повадках питомца  -->
-        <fieldset class="program-form__field-group field-group">
+        <fieldset class="program-form__field-group program-form__field-group--comments field-group">
           <legend class="field-group__title">Комментарий</legend>
           <label class="visually-hidden" for="pet-behavior">Повадки кота</label>
           <textarea class="field-group__textarea" id="pet-behavior" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <!--  Форма: дополнительно к заказу  -->
-        <fieldset class="program-form__field-group field-group">
+        <fieldset class="program-form__field-group program-form__field-group--extra field-group">
           <legend class="field-group__title">Дополнительно</legend>
           <ul class="field-group__list">
             <li class="field-group__item">
@@ -177,15 +183,18 @@
       <div class="page-footer__wrapper">
 
         <!--  Контакты  -->
-        <div class="page-footer__contacts contacts">
-          <p class="contacts__dealers-text">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <address class="contacts__address">
-            <p class="contacts__address-text">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        <div class="page-footer__contacts contacts contacts--inner">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__text">
+            <p class="contacts__dealers-text">
+              Приглашаем к сотрудничеству дилеров!
             </p>
-          </address>
+            <address class="contacts__address">
+              <p class="contacts__address-text">
+                ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              </p>
+            </address>
+          </div>
           <iframe
             class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.415149034736!2d30.3142873048947!3d59.93871648178726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1642190278001!5m2!1sru!2sru"
@@ -199,11 +208,14 @@
         <!--  Ссылки  -->
         <div class="page-footer__links">
           <!--  Лого  -->
-          <a class="page-footer__logo-title" href="index.html">
-            <img src="img/logos/logo-title.svg" width="128" height="24" alt="Логотип-заголовок 'Кэт энерджи'.">
-          </a>
+          <div class="page-footer__logo-title">
+            <a class="page-footer__logo-link" href="index.html">
+              <img src="img/logos/logo-title.svg" width="128" height="24" alt="Логотип-заголовок 'Кэт энерджи'.">
+            </a>
+          </div>
           <!--  Социальные сети  -->
           <div class="page-footer__social social">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -224,6 +236,7 @@
           </div>
           <!--  Копирайт  -->
           <div class="page-footer__copyright copyright">
+            <h2 class="visually-hidden">Копирайт</h2>
             <p class="copyright__text">HTML Academy</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <img src="img/logos/logo-htmlacademy.svg" width="27" height="34" alt="Логотип 'HTML Academy'.">

@@ -1,0 +1,32 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+
+.stats__list {
+  margin: 0;
+}
+
+.stats__number {
+  font-size: 24px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
+
+
+.stats__description {
+  margin: 0;
+
+  font-family: $font-family-secondary;
+  font-size: $font-size-extra-tiny;
+  line-height: $line-height-super-tiny;
+}
+
+.stats__price {
+  margin: 0;
+
+  font-size: $font-size-tiny;
+  line-height: $line-height-small;
+
+  text-transform: uppercase;
+}

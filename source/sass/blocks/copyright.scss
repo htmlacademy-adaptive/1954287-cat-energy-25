@@ -1,0 +1,12 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.copyright__text {
+  @include text-block-small;
+
+  margin: 0;
+
+  font-size: $font-size-extra-small;
+
+  color: $tundora;
+}

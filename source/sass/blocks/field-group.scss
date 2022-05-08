@@ -1,0 +1,30 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.field-group {
+  margin: 0;
+
+  border: none;
+
+  &--border {
+    border-top: 1px solid $alto;
+    border-bottom: 1px solid $alto;
+  }
+}
+
+.field-group__list {
+  @include list-reset;
+}
+
+.field-group__title {
+  font-size: $font-size-big;
+  line-height: $line-height-big;
+
+  text-transform: none;
+}
+
+.field-group__textarea {
+  &::placeholder {
+    @include form-text;
+  }
+}

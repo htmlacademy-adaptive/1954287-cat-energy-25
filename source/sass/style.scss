@@ -1,1 +1,34 @@
-// Начните писать стили здесь
+// abstracts
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+
+// base
+@use "base/fonts";
+@use "base/generic";
+
+// blocks
+@use "blocks/button";
+@use "blocks/contacts";
+@use "blocks/copyright";
+@use "blocks/example";
+@use "blocks/extra-catalog";
+@use "blocks/extra-product-card";
+@use "blocks/field-group";
+@use "blocks/how-it-works";
+@use "blocks/main-catalog";
+@use "blocks/main-inner";
+@use "blocks/main-nav";
+@use "blocks/page";
+@use "blocks/page-footer";
+@use "blocks/page-header";
+@use "blocks/page-main";
+@use "blocks/product-card";
+@use "blocks/product-categories";
+@use "blocks/program-form";
+@use "blocks/promo";
+@use "blocks/promo-banner";
+@use "blocks/section-title";
+@use "blocks/slider";
+@use "blocks/social";
+@use "blocks/stats";
+@use "blocks/visually-hidden";

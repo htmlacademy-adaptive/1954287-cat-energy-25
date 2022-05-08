@@ -1,0 +1,11 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $text-color-primary;
+}

@@ -1,0 +1,44 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.extra-product-card {
+  border-bottom: 1px solid $silver;
+
+  &:first-child {
+    border-top: 1px solid $silver;
+  }
+}
+
+.extra-product-card__title {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-size: $font-size-extra-small;
+  line-height: $line-height-tiny;
+  font-weight: $font-weight-regular;
+
+  text-transform: uppercase;
+
+  color: $mine-shaft;
+}
+
+.extra-product-card__info {
+  @include text-block-small;
+
+  margin: 0;
+  margin-bottom: 15px;
+
+  line-height: $line-height-extra-tiny;
+
+  color: $tundora;
+}
+
+.extra-product-card__info-item {
+  margin: 0;
+}
+
+.extra-product-card__order {
+  padding: 10px 0;
+
+  line-height: $line-height-small;
+}
