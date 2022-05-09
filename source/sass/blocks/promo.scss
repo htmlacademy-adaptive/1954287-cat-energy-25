@@ -1,0 +1,56 @@
+@use "abstracts/variables" as *;
+
+.promo {
+  font-weight: $font-weight-regular;
+  color: $text-color-inverse;
+}
+
+.promo__background {
+  $background-promo-mask: transparentize($background-color-accent, 0.15);
+
+  height: 302px;
+
+  background-image: linear-gradient($background-promo-mask, $background-promo-mask), url("/img/images/promo-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo__wrapper {
+  margin-top: -275px;
+  padding-top: 27px;
+}
+
+.promo__text {
+  margin-bottom: 29px;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: $font-size-large;
+  line-height: $line-height-extra-large;
+  font-weight: inherit;
+}
+
+.promo__slogan {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: $font-size-tiny;
+  line-height: $line-height-extra-tiny;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  margin-bottom: 3px;
+
+  img {
+    display: block;
+  }
+}
+
+.promo__link {
+  padding: 11px 0;
+  font-size: $font-size-tiny;
+  font-weight: $line-height-extra-small;
+}

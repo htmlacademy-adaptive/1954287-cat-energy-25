@@ -1,0 +1,55 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.program-form {
+  @include form-text;
+}
+
+.program-form__field-group {
+  padding: 0 20px;
+
+  &--cat-info {
+    padding-bottom: 24px;
+  }
+
+  &--category {
+    margin-bottom: 26px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+
+    border-top: 1px solid $alto;
+    border-bottom: 1px solid $alto;
+  }
+
+  &--owner-contacts {
+    padding-top: 35px;
+    padding-bottom: 24px;
+  }
+
+  &--comments {
+    padding-top: 38px;
+    padding-bottom: 23px;
+  }
+
+  &--extra {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+}
+
+.program-form__submit {
+  margin-bottom: 21px;
+  padding: 10px 0;
+
+  line-height: $line-height-small;
+}
+
+.program-form__note {
+  @include text-block-small;
+
+  margin: 0;
+
+  line-height: $line-height-tiny;
+
+  text-transform: none;
+}

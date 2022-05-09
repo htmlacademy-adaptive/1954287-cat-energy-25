@@ -1,0 +1,30 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.how-it-works__title {
+  margin: 0;
+}
+
+.how-it-works__list {
+  @include list-reset;
+  padding: 40px 0 50px 0;
+}
+
+.how-it-works__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.how-it-works__icon {
+  width: 60px;
+  height: 60px;
+
+  background-color: $background-color-accent;
+}
+
+.how-it-works__description {
+  @include text-block-small;
+
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.slider__toggle {
+  font-size: $font-size-extra-small;
+  line-height: $line-height-small;
+
+  text-transform: uppercase;
+}
+
+.slider__list {
+  @include list-reset;
+}

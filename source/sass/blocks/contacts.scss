@@ -1,0 +1,38 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.contacts {
+  &--inner {
+    background-color: $background-color-secondary;
+  }
+}
+
+.contacts__text {
+  padding: 26px 20px;
+}
+
+.contacts__dealers-text {
+  margin: 0;
+
+  font-size: $font-size-extra-small;
+  line-height: $line-height-small;
+
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include text-block-small;
+
+  line-height: $font-size-medium;
+
+  color: $tundora;
+}
+
+.contacts__address-text {
+  margin: 0;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+}

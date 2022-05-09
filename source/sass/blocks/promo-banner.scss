@@ -1,0 +1,28 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.promo-banner__wrapper {
+  $background-promo-mask: transparentize($background-color-accent, 0.15);
+
+  height: 290px;
+  padding: 59px 0 43px;
+
+  background-image: linear-gradient($background-promo-mask, $background-promo-mask), url("/img/images/promo-banner-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo-banner__icon {
+  margin-bottom: 48px;
+}
+
+.promo-banner__text {
+  width: 161px;
+  margin: 0;
+
+  font-family: $font-family-secondary;
+  font-size: $font-size-extra-small;
+  line-height: $line-height-small;
+
+  color: $text-color-inverse;
+}

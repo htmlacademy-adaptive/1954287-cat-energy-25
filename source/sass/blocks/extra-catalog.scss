@@ -1,0 +1,20 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.extra-catalog__section-title {
+  margin-top: 25px;
+  margin-bottom: 36px;
+
+  font-size: $font-size-big;
+  line-height: $line-height-medium;
+  font-weight: $font-weight-regular;
+}
+
+.extra-catalog__list {
+  @include list-reset;
+}
+
+.extra-catalog__product-card {
+  padding-top: 12px;
+  padding-bottom: 20px;
+}

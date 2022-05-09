@@ -1,0 +1,20 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.page-footer__links {
+  padding: 0 20px;
+
+  background-color: $background-color-secondary;
+}
+
+.page-footer__logo-title {
+  padding: 40px 0 32px;
+}
+
+.page-footer__logo-link {
+  display: block;
+}
+
+.page-footer__copyright {
+  padding: 22px 0;
+}
