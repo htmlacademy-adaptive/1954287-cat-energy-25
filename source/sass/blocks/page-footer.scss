@@ -2,13 +2,27 @@
 @use "abstracts/variables" as *;
 
 .page-footer__links {
-  padding: 0 20px;
-
   background-color: $background-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
 }
 
 .page-footer__logo-title {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
   padding: 40px 0 32px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+
+    width: 200px;
+  }
 }
 
 .page-footer__logo-link {

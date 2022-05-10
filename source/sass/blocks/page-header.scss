@@ -1,3 +1,4 @@
+@use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 
 .page-header {
@@ -5,6 +6,19 @@
   font-size: $font-size-medium;
   line-height: $line-height-small;
   font-weight: $font-weight-medium;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 110px 0;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-header__logo-image {
@@ -13,4 +27,8 @@
 
 .page-header__logo-title {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
