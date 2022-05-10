@@ -1,6 +1,17 @@
 @use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 
+.copyright {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+
+    width: 200px;
+  }
+}
+
 .copyright__text {
   @include text-block-small;
 
@@ -9,4 +20,8 @@
   font-size: $font-size-extra-small;
 
   color: $tundora;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }

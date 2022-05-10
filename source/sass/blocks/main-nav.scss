@@ -1,11 +1,37 @@
 @use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}
+
 .main-nav__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+    width: 478px;
+  }
 }
 
 .main-nav__link {
   text-decoration: none;
   color: $text-color-primary;
+
+  @media (min-width: $desktop-width) {
+    color: $text-color-inverse;
+  }
 }

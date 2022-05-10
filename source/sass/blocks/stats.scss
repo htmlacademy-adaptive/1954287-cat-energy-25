@@ -1,9 +1,15 @@
 @use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 
-
 .stats__list {
+  display: flex;
+
   margin: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .stats__number {

@@ -2,11 +2,26 @@
 @use "abstracts/variables" as *;
 
 .social {
+
+  display: flex;
+  width: 100%;
   padding: 20px 0;
+
   border-top: 1px solid $alto;
   border-bottom: 1px solid $alto;
+
+  @media (min-width: $tablet-width) {
+    width: 240px;
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
 }
 
 .social__list {
   @include list-reset;
+
+  margin: auto;
 }

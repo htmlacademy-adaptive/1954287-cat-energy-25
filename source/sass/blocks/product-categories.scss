@@ -3,14 +3,36 @@
 
 .product-categories__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .product-categories__card {
   padding: 24px 33px 18px 20px;
+
   background-color: $background-color-secondary;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 }
 
