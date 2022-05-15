@@ -5,11 +5,35 @@
   @include form-text;
 }
 
+.program-form__field-groups-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+
+    margin-bottom: 70px;
+  }
+}
+
 .program-form__field-group {
   padding: 0 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &--cat-info {
     padding-bottom: 24px;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--category {
@@ -19,6 +43,18 @@
 
     border-top: 1px solid $alto;
     border-bottom: 1px solid $alto;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 40px;
+      margin-right: 36px;
+      padding: 25px 28px;
+
+      border: 1px solid $alto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 
   &--owner-contacts {
@@ -37,19 +73,35 @@
   }
 }
 
+.program-form__submit-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .program-form__submit {
+  line-height: $line-height-small;
+
   margin-bottom: 21px;
   padding: 10px 0;
 
-  line-height: $line-height-small;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .program-form__note {
   @include text-block-small;
 
-  margin: 0;
-
   line-height: $line-height-tiny;
+
+  margin: 0;
 
   text-transform: none;
 }

@@ -1,7 +1,7 @@
 @use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 
-.promo-banner__wrapper {
+.promo-banner {
   $background-promo-mask: transparentize($background-color-accent, 0.15);
 
   height: 290px;
@@ -10,10 +10,32 @@
   background-image: linear-gradient($background-promo-mask, $background-promo-mask), url("/img/images/promo-banner-cat.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 200px;
+    padding: 57px 124px 69px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+
+    width: 245px;
+    height: auto;
+
+    padding: 56px 0 42px;
+  }
 }
 
 .promo-banner__icon {
   margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .promo-banner__text {
@@ -25,4 +47,8 @@
   line-height: $line-height-small;
 
   color: $text-color-inverse;
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

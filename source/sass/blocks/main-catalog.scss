@@ -3,8 +3,25 @@
 
 .main-catalog__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 141px;
+    align-items: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 143px;
+    align-items: end;
+  }
 }
 
 .main-catalog__product-card {
-  padding: 20px 20px 25px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }

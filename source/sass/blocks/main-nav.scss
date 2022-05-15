@@ -16,6 +16,8 @@
 .main-nav__list {
   @include list-reset;
 
+  color: $text-color-primary;
+
   @media (min-width: $tablet-width) {
     width: 440px;
   }
@@ -23,15 +25,23 @@
   @media (min-width: $desktop-width) {
     position: relative;
     z-index: 1;
+
     width: 478px;
+
+    color: $text-color-inverse;
+  }
+
+  &--inner-page {
+    @media (min-width: $desktop-width) {
+      color: $text-color-primary;
+    }
   }
 }
 
 .main-nav__link {
   text-decoration: none;
-  color: $text-color-primary;
 
   @media (min-width: $desktop-width) {
-    color: $text-color-inverse;
+    color: inherit;
   }
 }
