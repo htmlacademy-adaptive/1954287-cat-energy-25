@@ -5,15 +5,30 @@
   margin: 0;
 
   border: none;
-
-  &--border {
-    border-top: 1px solid $alto;
-    border-bottom: 1px solid $alto;
-  }
 }
 
 .field-group__list {
   @include list-reset;
+
+  &--owner-contacts {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 78px;
+    }
+  }
+
+  &--extra {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
 .field-group__title {
@@ -23,7 +38,33 @@
   text-transform: none;
 }
 
+.field-group__label {
+  display: flex;
+}
+
+.field-group__input-name {
+  white-space: nowrap;
+}
+
+.field-group__input {
+  &:not([type="checkbox"]):not([type="radio"]) {
+    width: 100%;
+  }
+}
+
 .field-group__textarea {
+  display: block;
+
+  width: 100%;
+  height: 150px;
+
+  overflow: auto;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+  }
+
   &::placeholder {
     @include form-text;
   }

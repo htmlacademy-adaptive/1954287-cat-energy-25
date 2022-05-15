@@ -2,33 +2,71 @@
 @use "abstracts/variables" as *;
 
 .extra-product-card {
+  padding-top: 12px;
+  padding-bottom: 20px;
+
   border-bottom: 1px solid $silver;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0 17px;
+  }
 
   &:first-child {
     border-top: 1px solid $silver;
   }
 }
 
-.extra-product-card__title {
-  margin: 0;
-  margin-bottom: 13px;
+.extra-product-card__text-wrapper {
+  margin-bottom: 15px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    justify-content: space-between;
+
+    margin-bottom: 0;
+  }
+}
+
+.extra-product-card__title {
   font-size: $font-size-extra-small;
   line-height: $line-height-tiny;
   font-weight: $font-weight-regular;
-
   text-transform: uppercase;
 
+  margin: 0;
+  margin-bottom: 10px;
+
   color: $mine-shaft;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-product-card__info {
   @include text-block-small;
 
-  margin: 0;
-  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 
   line-height: $line-height-extra-tiny;
+
+  margin: 0;
 
   color: $tundora;
 }
@@ -41,4 +79,8 @@
   padding: 10px 0;
 
   line-height: $line-height-small;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }

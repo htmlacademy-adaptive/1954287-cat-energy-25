@@ -22,7 +22,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
+            <ul class="main-nav__list main-nav__list--inner-page">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">
                   Главная
@@ -51,7 +51,7 @@
       </h1>
 
       <!--  Основной каталог товаров  -->
-      <section class="main-catalog">
+      <section class="main-catalog page-main__container">
         <h2 class="visually-hidden">Каталог основной продукции</h2>
         <ul class="main-catalog__list">
           <li class="main-catalog__product-card product-card">
@@ -261,52 +261,63 @@
       </section>
 
       <!--  Дополнительный каталог товаров  -->
+
       <section class="extra-catalog page-main__container">
         <h2 class="extra-catalog__section-title">Дополнительные товары</h2>
-        <ul class="extra-catalog__list">
-          <li class="extra-catalog__product-card extra-product-card">
-            <h3 class="extra-product-card__title">Сахарозаменитель</h3>
-            <dl class="extra-product-card__info">
-              <dt class="extra-product-card__description">1 упаковка (100 г)</dt>
-              <dd class="extra-product-card__info-item">200 Р.</dd>
-            </dl>
-            <button class="extra-product-card__order button" type="button">Заказать</button>
-          </li>
-          <li class="extra-catalog__product-card extra-product-card">
-            <h3 class="extra-product-card__title">Питьевая вода</h3>
-            <dl class="extra-product-card__info">
-              <dt class="extra-product-card__description">5 литров</dt>
-              <dd class="extra-product-card__info-item">50 Р.</dd>
-            </dl>
-            <button class="extra-product-card__order button" type="button">Заказать</button>
-          </li>
-          <li class="extra-catalog__product-card extra-product-card">
-            <h3 class="extra-product-card__title">Молоко</h3>
-            <dl class="extra-product-card__info">
-              <dt class="extra-product-card__description">1 литр</dt>
-              <dd class="extra-product-card__info-item">100 Р.</dd>
-            </dl>
-            <button class="extra-product-card__order button" type="button">Заказать</button>
-          </li>
-          <li class="extra-catalog__product-card extra-product-card">
-            <h3 class="extra-product-card__title">Молоко</h3>
-            <dl class="extra-product-card__info">
-              <dt class="extra-product-card__description">1 литр</dt>
-              <dd class="extra-product-card__info-item">100 Р.</dd>
-            </dl>
-            <button class="extra-product-card__order button" type="button">Заказать</button>
-          </li>
-        </ul>
-      </section>
+        <div class="extra-catalog__wrapper">
+          <ul class="extra-catalog__list">
+            <li class="extra-catalog__product-card extra-product-card">
+              <div class="extra-product-card__text-wrapper">
+                <h3 class="extra-product-card__title">Сахарозаменитель</h3>
+                <dl class="extra-product-card__info">
+                  <dt class="extra-product-card__description">1 упаковка (100 г)</dt>
+                  <dd class="extra-product-card__info-item">200 Р.</dd>
+                </dl>
+              </div>
+              <button class="extra-product-card__order button" type="button">Заказать</button>
+            </li>
+            <li class="extra-catalog__product-card extra-product-card">
+              <div class="extra-product-card__text-wrapper">
+                <h3 class="extra-product-card__title">Питьевая вода</h3>
+                <dl class="extra-product-card__info">
+                  <dt class="extra-product-card__description">5 литров</dt>
+                  <dd class="extra-product-card__info-item">50 Р.</dd>
+                </dl>
+              </div>
+              <button class="extra-product-card__order button" type="button">Заказать</button>
+            </li>
+            <li class="extra-catalog__product-card extra-product-card">
+              <div class="extra-product-card__text-wrapper">
+                <h3 class="extra-product-card__title">Молоко</h3>
+                <dl class="extra-product-card__info">
+                  <dt class="extra-product-card__description">1 литр</dt>
+                  <dd class="extra-product-card__info-item">100 Р.</dd>
+                </dl>
+              </div>
+              <button class="extra-product-card__order button" type="button">Заказать</button>
+            </li>
+            <li class="extra-catalog__product-card extra-product-card">
+              <div class="extra-product-card__text-wrapper">
+                <h3 class="extra-product-card__title">Молоко</h3>
+                <dl class="extra-product-card__info">
+                  <dt class="extra-product-card__description">1 литр</dt>
+                  <dd class="extra-product-card__info-item">100 Р.</dd>
+                </dl>
+              </div>
+              <button class="extra-product-card__order button" type="button">Заказать</button>
+            </li>
+          </ul>
 
-      <!--  Промо-баннер  -->
-      <section class="main-inner__promo-banner page-main__container promo-banner">
-        <h2 class="visually-hidden">Промо-баннер</h2>
-        <div class="promo-banner__wrapper">
-          <svg class="promo-banner__icon" width="78" height="80">
-            <use xlink:href="img/icons/sprite.svg#icon-gift"></use>
-          </svg>
-          <p class="promo-banner__text">Закажите все и получите чехол для кота в подарок!</p>
+          <!--  Промо-баннер  -->
+          <div class="extra-catalog__promo-banner promo-banner">
+            <h2 class="visually-hidden">Промо-баннер</h2>
+            <svg class="promo-banner__icon" width="78" height="80">
+              <use xlink:href="img/icons/sprite.svg#icon-gift"></use>
+            </svg>
+            <p class="promo-banner__text">
+              Закажите все и получите чехол для кота в подарок!
+            </p>
+          </div>
         </div>
       </section>
 

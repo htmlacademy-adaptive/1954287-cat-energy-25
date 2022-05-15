@@ -22,7 +22,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
+            <ul class="main-nav__list main-nav__list--inner-page">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">
                   Главная
@@ -44,9 +44,9 @@
       </div>
     </header>
 
-    <main class="page-main main-inner">
+    <main class="page-main main-inner--form">
       <!--  Заголовок с описанием  -->
-      <div class="page-main__container">
+      <div class="main-inner__header-wrapper--form">
         <h1 class="main-inner__title main-inner__title--form">
           Подбор программы
         </h1>
@@ -59,69 +59,72 @@
       <!--  Форма подбора программы  -->
       <form class="main-inner__program-form program-form" action="https://echo.htmlacademy.ru" method="POST">
 
-        <!--  Форма: информация о питомце  -->
-        <fieldset class="program-form__field-group program-form__field-group--cat-info field-group">
-          <legend class="visually-hidden">Информация о коте</legend>
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="field-group__label">
-                Имя
-                <input class="field-group__input" type="text" name="cat_name" required>
-              </label>
-            </li>
-            <li class="field-group__item">
-              <label class="field-group__label">
-                Вес (кг)
-                <input class="field-group__input" type="text" name="cat_weight" pattern="[0-9]" required>
-              </label>
-            </li>
-            <li class="field-group__item">
-              <label class="field-group__label">
-                Возраст (лет)
-                <input class="field-group__input" type="text" name="cat_age" pattern="[0-9]">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="program-form__field-groups-wrapper">
+          <fieldset class="program-form__field-group program-form__field-group--cat-info field-group">
+            <legend class="visually-hidden">Информация о коте</legend>
+            <ul class="field-group__list">
+              <li class="field-group__item">
+                <label class="field-group__label">
+                  <span class="field-group__input-name">Имя:*</span>
+                  <input class="field-group__input" type="text" name="cat_name" required>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="field-group__label">
+                  <span class="field-group__input-name">Вес (кг):*</span>
+                  <input class="field-group__input" type="text" name="cat_weight" pattern="[0-9]" required>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="field-group__label">
+                  <span class="field-group__input-name">Возраст (лет):</span>
+                  <input class="field-group__input" type="text" name="cat_age" pattern="[0-9]">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <!--  Форма: цель программы  -->
-        <fieldset class="program-form__field-group program-form__field-group--category field-group">
-          <legend class="visually-hidden">Выбор категории товара</legend>
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="field-group__label">
-                <input class="field-group__input" type="radio" name="food_category" value="slim" checked>
-                Похудение
-              </label>
-            </li>
-            <li class="field-group__item">
-              <label class="field-group__label">
-                <input class="field-group__input" type="radio" name="food_category" value="strong">
-                Набор массы
-              </label>
-            </li>
-            <li class="field-group__item">
-              <label class="field-group__label">
-                <input class="field-group__input" type="radio" name="food_category" value="need_advice">
-                Не знаю (нужен ваш совет)
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+          <!--  Форма: цель программы  -->
+          <fieldset class="program-form__field-group program-form__field-group--category field-group">
+            <legend class="visually-hidden">Выбор категории товара</legend>
+            <ul class="field-group__list">
+              <li class="field-group__item">
+                <label class="field-group__label">
+                  <input class="field-group__input" type="radio" name="food_category" value="slim" checked>
+                  Похудение
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="field-group__label">
+                  <input class="field-group__input" type="radio" name="food_category" value="strong">
+                  Набор массы
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="field-group__label">
+                  <input class="field-group__input" type="radio" name="food_category" value="need_advice">
+                  Не знаю (нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <!--  Форма: информация о питомце  -->
+
 
         <!--  Форма: контакты владельца  -->
         <fieldset class="program-form__field-group program-form__field-group--owner-contacts field-group">
           <legend class="field-group__title">Контактные данные (владельца кота)</legend>
-          <ul class="field-group__list">
+          <ul class="field-group__list field-group__list--owner-contacts">
             <li class="field-group__item">
               <label class="field-group__label">
-                E-mail:*
+                <span class="field-group__input-name">E-mail:*</span>
                 <input class="field-group__input" type="email" name="owner_email" required>
               </label>
             </li>
             <li class="field-group__item">
               <label class="field-group__label">
-                Телефон:*
+                <span class="field-group__input-name">Телефон:*</span>
                 <input class="field-group__input" type="tel" name="owner_phone" required>
               </label>
             </li>
@@ -138,11 +141,11 @@
         <!--  Форма: дополнительно к заказу  -->
         <fieldset class="program-form__field-group program-form__field-group--extra field-group">
           <legend class="field-group__title">Дополнительно</legend>
-          <ul class="field-group__list">
+          <ul class="field-group__list field-group__list--extra">
             <li class="field-group__item">
               <label class="field-group__label">
                 <input class="field-group__input" type="checkbox" name="add" value="sweetener">
-                Сахарозаменитель
+                <span class="field-group__input-name">Сахарозаменитель</span>
               </label>
             </li>
             <li class="field-group__item">
@@ -160,20 +163,22 @@
             <li class="field-group__item">
               <label class="field-group__label">
                 <input class="field-group__input" type="checkbox" name="add" value="vitamins">
-                Витамины
+                <span class="field-group__input-name">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <button class="program-form__submit button" type="submit">Отправить заявку</button>
+        <div class="program-form__submit-wrapper program-form__field-group">
+          <button class="program-form__submit button" type="submit">Отправить заявку</button>
 
-        <!--  Форма: примечание  -->
-        <p class="program-form__note">
-          <small>
-            * — Обязательные поля
-          </small>
-        </p>
+          <!--  Форма: примечание  -->
+          <p class="program-form__note">
+            <small>
+              * — Обязательные поля
+            </small>
+          </p>
+        </div>
 
       </form>
     </main>
