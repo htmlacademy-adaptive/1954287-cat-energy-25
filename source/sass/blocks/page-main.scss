@@ -29,4 +29,9 @@
   font-size: $font-size-large;
   line-height: $line-height-huge;
   font-weight: $font-weight-regular;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-huge;
+    line-height: 1;
+  }
 }

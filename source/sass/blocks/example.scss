@@ -8,8 +8,13 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    background-color: $background-color-primary;
     z-index: 1;
+
+    padding-top: 43px;
+    padding-bottom: 62px;
+
+    border-top: 1px solid $mercury;
+    background-color: $background-color-primary;
 
     &::after {
       content: "";
@@ -23,12 +28,21 @@
       z-index: -1;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+
+    border-top: none;
+  }
 }
 
 .example__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -53,7 +67,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 }
 
@@ -74,9 +88,13 @@
   @include text-block-small;
 
   margin: 0;
+
+  color: $text-color-secondary;
 }
 
 .example__stats {
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -90,5 +108,6 @@
 .example__visual {
   @media (min-width: $desktop-width) {
     width: 591px;
+    margin-top: -43px;
   }
 }

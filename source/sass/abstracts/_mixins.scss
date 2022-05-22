@@ -13,7 +13,13 @@
   line-height: $line-height-extra-small;
   font-weight: $font-weight-regular;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-extra-small;
+    line-height: $line-height-medium;
+  }
 }
+
 
 @mixin form-text {
   font-family: $font-family-primary;
