@@ -40,50 +40,96 @@
 }
 
 .promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: -275px;
-  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
+    align-items: flex-start;
+
+    margin-top: 64px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
 
     width: 50%;
+    margin-top: 0;
     padding-top: 223px;
   }
 }
 
 .promo__text {
+  width: 250px;
   margin-bottom: 29px;
 
+  text-align: center;
+
   @media (min-width: $tablet-width) {
+    width: 416px;
     margin-left: 87px;
+    margin-bottom: 49px;
+
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    margin-left: 80px;
   }
 }
 
 .promo__title {
+  font-size: $font-size-large;
+  line-height: 1;
+  font-weight: inherit;
+
   margin: 0;
   margin-bottom: 25px;
-  font-size: $font-size-large;
-  line-height: $line-height-extra-large;
-  font-weight: inherit;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-huge;
+
+    margin-bottom: 40px;
+  }
 }
 
 .promo__slogan {
-  margin: 0;
-  margin-bottom: 25px;
   font-size: $font-size-tiny;
-  line-height: $line-height-extra-tiny;
+  line-height: 1;
   font-weight: inherit;
   text-transform: uppercase;
+
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-medium;
+  }
 }
 
 .promo__image {
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+
+    margin-top: -83px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 141px;
+    right: -406px;
+    bottom: auto;
+    left: auto;
+
+    order: unset;
+
+    margin-top: 0;
+  }
 
   img {
     display: block;
@@ -98,35 +144,25 @@
       height: 499px;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    order: 4;
-
-    margin-top: -83px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 141px;
-    right: -390px;
-    bottom: auto;
-    left: auto;
-
-    order: unset;
-
-    margin-top: 0;
-  }
 }
 
 .promo__link {
   padding: 11px 0;
   font-size: $font-size-tiny;
-  font-weight: $line-height-extra-small;
+  font-weight: $font-weight-regular;
 
   @media (min-width: $tablet-width) {
     z-index: 1;
 
+    font-size: $font-size-medium;
+    line-height: $line-height-big;
+
     width: 244px;
     margin-left: 87px;
+    padding: 14px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }

@@ -5,7 +5,7 @@
 
   display: flex;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 21px;
 
   border-top: 1px solid $alto;
   border-bottom: 1px solid $alto;
@@ -15,7 +15,7 @@
     border: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 500px;
   }
 }
@@ -23,5 +23,17 @@
 .social__list {
   @include list-reset;
 
+  display: flex;
+
   margin: auto;
+
+  .social__item + .social__item {
+    margin-left: 24px;
+  }
+}
+
+.social__link {
+  .svg {
+    fill: $color-accent;
+  }
 }

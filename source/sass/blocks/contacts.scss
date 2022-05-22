@@ -39,6 +39,11 @@
   line-height: $line-height-small;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-medium;
+    line-height: $line-height-big;
+  }
 }
 
 .contacts__address {
@@ -49,15 +54,31 @@
   line-height: $font-size-medium;
 
   color: $tundora;
+
+  @media (min-width: $tablet-width) {
+    line-height: $line-height-small;
+    width: 160px;
+  }
 }
 
 .contacts__address-text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+  }
 }
 
 .contacts__map {
   display: block;
+
   width: 100%;
+
+  border: none;
 
   @media (min-width: $tablet-width) {
     height: 400px;

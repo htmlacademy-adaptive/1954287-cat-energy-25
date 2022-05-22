@@ -1,13 +1,160 @@
 @use "abstracts/mixins" as *;
 @use "abstracts/variables" as *;
 
+.slider__list {
+  @include list-reset;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 29px;
+  }
+}
+
+.slider__item {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    width: 296px;
+    height: 511px;
+
+    object-fit: cover;
+  }
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    object-fit: cover;
+
+    width: 296px;
+    height: 511px;
+    margin: 0;
+
+    &--fat-cat {
+      object-position: 0 50%;
+    }
+
+    &--skinny-cat {
+      object-position: 100% 50%;
+    }
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  align-items: center;
+
+  padding: 0 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    justify-content: center;
+  }
+}
+
 .slider__toggle {
+  position: relative;
+
   font-size: $font-size-extra-small;
   line-height: $line-height-small;
 
-  text-transform: uppercase;
+  width: 49px;
+  height: 30px;
+
+  text-align: center;
+  color: $text-color-primary;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      content: "";
+      width: 37px;
+      border-bottom: 1px dotted $silver;
+    }
+  }
 }
 
-.slider__list {
-  @include list-reset;
+.slider__bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3px;
+
+  width: 100%;
+  height: 14px;
+  padding: 3px 5px;
+  margin: 0 13px;
+
+
+  background: $background-color-primary;
+  border: 1px solid $silver;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: block;
+
+    width: 426px;
+    height: 6px;
+
+    border: none;
+    background-color: $alto-third-option;
+  }
+}
+
+.slider__marker {
+  visibility: hidden;
+  background-color: $background-color-accent;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -17px;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid $silver;
+    border-radius: 50%;
+    background-color: $background-color-primary;
+    box-shadow: 0 1px 3px transparentize($black, 0.84);
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      margin-top: -4px;
+      left: 50%;
+      margin-left: -4px;
+
+      width: 8px;
+      height: 8px;
+
+      background-color: $background-color-accent;
+      border-radius: 50%;
+    }
+  }
+
+  &--current {
+    visibility: visible;
+  }
 }
