@@ -6,10 +6,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-bottom: 86px;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 86px;
   }
 }
 
@@ -18,8 +21,19 @@
   margin-bottom: 36px;
 
   font-size: $font-size-big;
-  line-height: $line-height-medium;
+  line-height: 1;
   font-weight: $font-weight-regular;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-large;
+
+    margin-top: 68px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
+  }
 }
 
 .extra-catalog__wrapper {

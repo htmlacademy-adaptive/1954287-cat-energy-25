@@ -3,15 +3,23 @@
 
 .program-form {
   @include form-text;
+
+  &:invalid {
+    border-color: #68b738;
+  }
 }
 
 .program-form__field-groups-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 80px;
 
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 }
 
@@ -30,6 +38,10 @@
 
   &--cat-info {
     padding-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 72px;
+    }
 
     @media (min-width: $desktop-width) {
       padding-bottom: 0;
@@ -60,16 +72,39 @@
   &--owner-contacts {
     padding-top: 35px;
     padding-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 76px;
+      padding-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 57px;
+    }
   }
 
   &--comments {
     padding-top: 38px;
     padding-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 76px;
+      padding-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 67px;
+    }
   }
 
   &--extra {
     padding-top: 34px;
     padding-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 57px;
+      padding-bottom: 49px;
+    }
   }
 }
 
@@ -92,16 +127,28 @@
   padding: 10px 0;
 
   @media (min-width: $tablet-width) {
+    line-height: $line-height-big;
+
     margin-bottom: 0;
+    padding: 13px 0;
   }
 }
 
 .program-form__note {
-  @include text-block-small;
-
-  line-height: $line-height-tiny;
-
   margin: 0;
 
-  text-transform: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  small {
+    @include text-block-small;
+
+    line-height: $line-height-tiny;
+
+    text-transform: none;
+  }
 }
