@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script defer src="js/mainNavToggleScript.js"></script>
   </head>
   <body class="page__body">
@@ -13,7 +19,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo-image" href="index.html">
-          <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Логотип-картинка 'Кэт энерджи'.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logos/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.svg">
+            <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Логотип-картинка 'Кэт энерджи'.">
+          </picture>
         </a>
         <a class="page-header__logo-title" href="index.html">
           <img src="img/logos/logo-title.svg" width="101" height="18" alt="Логотип-заголовок 'Кэт энерджи'.">

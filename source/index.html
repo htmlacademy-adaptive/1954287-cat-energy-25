@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script defer src="js/mainNavToggleScript.js"></script>
   </head>
   <body class="page__body">
@@ -13,7 +19,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo-image">
-          <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Логотип-картинка 'Кэт энерджи'.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logos/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.svg">
+            <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Логотип-картинка 'Кэт энерджи'.">
+          </picture>
         </a>
         <a class="page-header__logo-title">
           <img src="img/logos/logo-title.svg" width="101" height="18" alt="Логотип-заголовок 'Кэт энерджи'.">
@@ -65,7 +75,11 @@
             </p>
           </div>
           <div class="promo__image">
-            <img src="img/images/promo-can.svg" width="280" height="270" alt="Банка питания со вкусом 'Курица'">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/images/promo-can-desktop.png 1x, img/images/promo-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/images/promo-can-tablet.png 1x, img/images/promo-can-tablet@2x.png 2x">
+              <img src="img/images/promo-can-mobile.png" srcset="img/images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Банка питания со вкусом 'Курица'">
+            </picture>
           </div>
           <a class="promo__link button" href="form.html">
             Подобрать программу
@@ -220,10 +234,16 @@
           <div class="example__visual slider">
             <ul class="example__list slider__list">
               <li class="example__item slider__item slider__item--current">
-                <img class="example__image slider__image slider__image--fat-cat" width="280" height="232" src="img/images/cat-fat.png" alt="Фотография толстого кота">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/images/cat-fat-not-mobile.png 1x, img/images/cat-fat-not-mobile@2x.png 2x">
+                  <img class="example__image slider__image slider__image--fat-cat" width="280" height="232" src="img/images/cat-fat-mobile.png" srcset="img/images/cat-fat-mobile@2x.png 2x" alt="Фотография толстого кота">
+                </picture>
               </li>
               <li class="example__item slider__item">
-                <img class="example__image slider__image slider__image--skinny-cat" width="225" height="232" src="img/images/cat-skinny.png" alt="Фотография худого кота">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/images/cat-skinny-not-mobile.png 1x, img/images/cat-skinny-not-mobile@2x.png 2x">
+                  <img class="example__image slider__image slider__image--skinny-cat" width="225" height="232" src="img/images/cat-skinny-not-mobile.png" srcset="img/images/cat-skinny-not-mobile@2x.png 2x" alt="Фотография худого кота">
+                </picture>
               </li>
             </ul>
             <div class="example__toggles slider__toggles">

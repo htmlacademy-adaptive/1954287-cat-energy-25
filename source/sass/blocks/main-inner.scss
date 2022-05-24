@@ -44,10 +44,13 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-huge;
     line-height: 1;
+
+    padding-top: 64px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
+    padding-top: 74px;
     margin-right: auto;
     margin-left: auto;
   }

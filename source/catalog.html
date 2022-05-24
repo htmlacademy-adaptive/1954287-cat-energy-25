@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script defer src="js/mainNavToggleScript.js"></script>
   </head>
   <body class="page__body">
@@ -13,7 +19,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo-image" href="index.html">
-          <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Логотип-картинка 'Кэт энерджи'.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logos/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.svg">
+            <img src="img/logos/logo-mobile.svg" width="33" height="37" alt="Логотип-картинка 'Кэт энерджи'.">
+          </picture>
         </a>
         <a class="page-header__logo-title" href="index.html">
           <img src="img/logos/logo-title.svg" width="101" height="18" alt="Логотип-заголовок 'Кэт энерджи'.">
@@ -62,13 +72,17 @@
           <li class="main-catalog__product-card product-card">
             <div class="product-card__content">
               <div class="product-card__image-wrapper product-card__image-wrapper--pro-chicken-500">
-                <img
-                  class="product-card__image"
-                  width="68"
-                  height="86"
-                  src="img/catalog/catalog-pro-chicken-500.png"
-                  alt="Банка питания 'Cat Energy PRO', вкус курицы, 500 грамм."
-                >
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-pro-chicken-500-not-mobile.png 1x, img/catalog/catalog-pro-chicken-500-not-mobile@2x.png 2x">
+                  <img
+                    class="product-card__image"
+                    width="68"
+                    height="86"
+                    src="img/catalog/catalog-pro-chicken-500-mobile.png"
+                    srcset="img/catalog/catalog-pro-chicken-500-mobile@2x.png 2x"
+                    alt="Банка питания 'Cat Energy PRO', вкус курицы, 500 грамм."
+                  >
+                </picture>
               </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy<br>PRO 500 г</h3>
@@ -93,13 +107,17 @@
           <li class="main-catalog__product-card product-card">
             <div class="product-card__content">
               <div class="product-card__image-wrapper product-card__image-wrapper--pro-chicken-1000">
-                <img
-                  class="product-card__image"
-                  width="84"
-                  height="101"
-                  src="img/catalog/catalog-pro-chicken-1000.png"
-                  alt="Банка питания 'Cat Energy PRO', вкус курицы, 1000 грамм."
-                >
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-pro-chicken-1000-not-mobile.png 1x, img/catalog/catalog-pro-chicken-1000-not-mobile@2x.png 2x">
+                  <img
+                    class="product-card__image"
+                    width="84"
+                    height="101"
+                    src="img/catalog/catalog-pro-chicken-1000-mobile.png"
+                    srcset="img/catalog/catalog-pro-chicken-1000-mobile@2x.png 2x"
+                    alt="Банка питания 'Cat Energy PRO', вкус курицы, 1000 грамм."
+                  >
+                </picture>
               </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy<br>PRO 1000 г</h3>
@@ -124,13 +142,17 @@
           <li class="main-catalog__product-card product-card">
             <div class="product-card__content">
               <div class="product-card__image-wrapper product-card__image-wrapper--pro-fish-500">
-                <img
-                  class="product-card__image"
-                  width="68"
-                  height="78"
-                  src="img/catalog/catalog-pro-fish-500.png"
-                  alt="Банка питания 'Cat Energy PRO', вкус рыбы, 500 грамм."
-                >
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-pro-fish-500-not-mobile.png 1x, img/catalog/catalog-pro-fish-500-not-mobile@2x.png 2x">
+                  <img
+                    class="product-card__image"
+                    width="68"
+                    height="78"
+                    src="img/catalog/catalog-pro-fish-500-mobile.png"
+                    srcset="img/catalog/catalog-pro-fish-500-mobile@2x.png 2x"
+                    alt="Банка питания 'Cat Energy PRO', вкус рыбы, 500 грамм."
+                  >
+                </picture>
               </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy<br>PRO 500 г</h3>
@@ -155,13 +177,17 @@
           <li class="main-catalog__product-card product-card">
             <div class="product-card__content">
               <div class="product-card__image-wrapper product-card__image-wrapper--pro-fish-1000">
-                <img
-                  class="product-card__image"
-                  width="84"
-                  height="101"
-                  src="img/catalog/catalog-pro-fish-1000.png"
-                  alt="Банка питания 'Cat Energy PRO', вкус рыбы, 1000 грамм."
-                >
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-pro-fish-1000-not-mobile.png 1x, img/catalog/catalog-pro-fish-1000-not-mobile@2x.png 2x">
+                  <img
+                    class="product-card__image"
+                    width="84"
+                    height="101"
+                    src="img/catalog/catalog-pro-fish-1000-mobile.png"
+                    srcset="img/catalog/catalog-pro-fish-1000-mobile@2x.png 2x"
+                    alt="Банка питания 'Cat Energy PRO', вкус рыбы, 1000 грамм."
+                  >
+                </picture>
               </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy<br>PRO 1000 г</h3>
@@ -186,13 +212,17 @@
           <li class="main-catalog__product-card product-card">
             <div class="product-card__content">
               <div class="product-card__image-wrapper product-card__image-wrapper--slim-buckwheat-500">
-                <img
-                  class="product-card__image"
-                  width="68"
-                  height="78"
-                  src="img/catalog/catalog-slim-buckwheat-500.png"
-                  alt="Банка питания 'Cat Energy SLIM', вкус гречки, 500 грамм."
-                >
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-slim-buckwheat-500-not-mobile.png 1x, img/catalog/catalog-slim-buckwheat-500-not-mobile@2x.png 2x">
+                  <img
+                    class="product-card__image"
+                    width="68"
+                    height="78"
+                    src="img/catalog/catalog-slim-buckwheat-500-mobile.png"
+                    srcset="img/catalog/catalog-slim-buckwheat-500-mobile@2x.png 2x"
+                    alt="Банка питания 'Cat Energy SLIM', вкус гречки, 500 грамм."
+                  >
+                </picture>
               </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy<br>SLIM 500 г</h3>
@@ -217,13 +247,17 @@
           <li class="main-catalog__product-card product-card">
             <div class="product-card__content">
               <div class="product-card__image-wrapper product-card__image-wrapper--slim-buckwheat-1000">
-                <img
-                  class="product-card__image"
-                  width="84"
-                  height="100"
-                  src="img/catalog/catalog-slim-buckwheat-1000.png"
-                  alt="Банка питания 'Cat Energy SLIM', вкус гречки, 1000 грамм."
-                >
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-slim-buckwheat-1000-not-mobile.png 1x, img/catalog/catalog-slim-buckwheat-1000-not-mobile@2x.png 2x">
+                  <img
+                    class="product-card__image"
+                    width="84"
+                    height="100"
+                    src="img/catalog/catalog-slim-buckwheat-1000-mobile.png"
+                    srcset="img/catalog/catalog-slim-buckwheat-1000-mobile@2x.png 2x"
+                    alt="Банка питания 'Cat Energy SLIM', вкус гречки, 1000 грамм."
+                  >
+                </picture>
               </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy<br>SLIM 1000 г</h3>
@@ -248,13 +282,17 @@
           <li class="main-catalog__product-card product-card">
             <div class="product-card__content">
               <div class="product-card__image-wrapper product-card__image-wrapper--slim-rice-500">
-                <img
-                  class="product-card__image"
-                  width="72"
-                  height="84"
-                  src="img/catalog/catalog-slim-rice-500.png"
-                  alt="Банка питания 'Cat Energy SLIM', вкус риса, 500 грамм."
-                >
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-slim-rice-500-not-mobile.png 1x, img/catalog/catalog-slim-rice-500-not-mobile@2x.png 2x">
+                  <img
+                    class="product-card__image"
+                    width="72"
+                    height="84"
+                    src="img/catalog/catalog-slim-rice-500-mobile.png"
+                    srcset="img/catalog/catalog-slim-rice-500-mobile@2x.png 2x"
+                    alt="Банка питания 'Cat Energy SLIM', вкус риса, 500 грамм."
+                  >
+                </picture>
               </div>
               <div class="product-card__text-wrapper">
                 <h3 class="product-card__title">Cat Energy<br>SLIM 500 г</h3>
