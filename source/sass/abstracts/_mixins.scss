@@ -29,4 +29,9 @@
   font-style: normal;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-medium;
+    line-height: $line-height-large;
+  }
 }
