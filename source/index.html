@@ -76,6 +76,9 @@
           </div>
           <div class="promo__image">
             <picture>
+              <source media="(min-width: 1440px)" srcset="img/images/promo-can-desktop.webp 1x, img/images/promo-can-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/images/promo-can-tablet.webp 1x, img/images/promo-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/images/promo-can-mobile.webp 1x, img/images/promo-can-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/images/promo-can-desktop.png 1x, img/images/promo-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/images/promo-can-tablet.png 1x, img/images/promo-can-tablet@2x.png 2x">
               <img src="img/images/promo-can-mobile.png" srcset="img/images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Банка питания со вкусом 'Курица'">
@@ -163,9 +166,7 @@
             </li>
             <li class="how-it-works__item">
               <div class="how-it-works__icon how-it-works__icon--fast-cooking">
-                <svg width="30" height="31">
-                  <use xlink:href="img/icons/sprite.svg#icon-water"></use>
-                </svg>
+                <!--  Иконка добавлена через background-image, т.к. из спрайта внешний вид был некорректный  -->
               </div>
               <p class="how-it-works__description">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
@@ -183,9 +184,7 @@
             </li>
             <li class="how-it-works__item">
               <div class="how-it-works__icon how-it-works__icon--quick-result">
-                <svg width="33" height="33">
-                  <use xlink:href="img/icons/sprite.svg#icon-clock"></use>
-                </svg>
+                <!--  Иконка добавлена через background-image, т.к. из спрайта внешний вид был некорректный  -->
               </div>
               <p class="how-it-works__description">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!

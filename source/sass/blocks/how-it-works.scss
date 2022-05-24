@@ -91,6 +91,18 @@
     margin-right: 0;
     margin-bottom: 31px;
   }
+
+  &--fast-cooking {
+    background-image: url("/img/icons/icon-water.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--quick-result {
+    background-image: url("/img/icons/icon-clock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .how-it-works__description {
