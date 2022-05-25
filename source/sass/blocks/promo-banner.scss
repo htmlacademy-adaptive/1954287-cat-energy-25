@@ -15,6 +15,10 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($background-promo-mask, $background-promo-mask), url("/img/images/promo-banner-cat@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -22,6 +26,11 @@
 
     height: 200px;
     padding: 57px 124px 69px 77px;
+    background-image: linear-gradient($background-promo-mask, $background-promo-mask), url("/img/images/promo-banner-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($background-promo-mask, $background-promo-mask), url("/img/images/promo-banner-cat-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +40,12 @@
     height: auto;
 
     padding: 56px 0 42px;
+
+    background-image: linear-gradient($background-promo-mask, $background-promo-mask), url("/img/images/promo-banner-cat.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($background-promo-mask, $background-promo-mask), url("/img/images/promo-banner-cat@2x.jpg");
+    }
   }
 }
 
