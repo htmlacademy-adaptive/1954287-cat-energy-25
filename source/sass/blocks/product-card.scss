@@ -242,6 +242,18 @@
   padding: 10px 0;
 
   line-height: $line-height-small;
+
+  &:hover {
+    background-color: $apple-second-option;
+  }
+
+  &:active {
+    background-color: $apple-second-option;
+
+    span {
+      opacity: 0.3;
+    }
+  }
 }
 
 .product-card__upload-more {
@@ -294,4 +306,16 @@
 
   color: $tundora;
   background-color: $background-color-secondary;
+
+  &:hover {
+    background-color: $galery-first-option;
+  }
+
+  &:active {
+    background-color: $galery-first-option;
+
+    span {
+      opacity: 0.3;
+    }
+  }
 }

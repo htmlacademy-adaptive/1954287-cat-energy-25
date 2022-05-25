@@ -33,7 +33,13 @@
 }
 
 .social__link {
-  .svg {
-    fill: $color-accent;
+  color: $dove-gray;
+
+  &:hover .social__icon {
+    color: $color-accent;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 }

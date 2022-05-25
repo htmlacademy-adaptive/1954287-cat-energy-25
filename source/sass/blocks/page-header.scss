@@ -37,6 +37,19 @@
 .page-header__logo-image {
   display: block;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+  }
+
   img {
     display: block;
 
@@ -54,6 +67,14 @@
 
 .page-header__logo-title {
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

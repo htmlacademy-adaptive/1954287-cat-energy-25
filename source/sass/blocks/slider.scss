@@ -152,6 +152,15 @@
       background-color: $background-color-accent;
       border-radius: 50%;
     }
+
+    &:hover {
+      box-shadow: 0 2px 4px transparentize($black, 0.81);
+    }
+
+    &:active {
+      border-color: $color-accent;
+      box-shadow: 0 3px 5px transparentize($black, 0.8);
+    }
   }
 
   &--current {
