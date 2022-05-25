@@ -109,6 +109,18 @@
 
   line-height: $line-height-small;
 
+  &:hover {
+    background-color: $apple-second-option;
+  }
+
+  &:active {
+    background-color: $apple-second-option;
+
+    span {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
   }

@@ -119,5 +119,13 @@
     padding-bottom: 0;
 
     border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

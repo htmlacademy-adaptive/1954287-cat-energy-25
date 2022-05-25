@@ -126,6 +126,18 @@
   margin-bottom: 21px;
   padding: 10px 0;
 
+  &:hover {
+    background-color: $apple-second-option;
+  }
+
+  &:active {
+    background-color: $apple-second-option;
+
+    span {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     line-height: $line-height-big;
 

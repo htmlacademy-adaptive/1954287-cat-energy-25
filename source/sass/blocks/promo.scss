@@ -164,6 +164,18 @@
   font-size: $font-size-tiny;
   font-weight: $font-weight-regular;
 
+  &:hover {
+    background-color: $apple-second-option;
+  }
+
+  &:active {
+    background-color: $apple-second-option;
+
+    span {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     z-index: 1;
 

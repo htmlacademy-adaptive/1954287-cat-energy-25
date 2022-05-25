@@ -185,11 +185,27 @@
     line-height: $line-height-large;
   }
 
-  .product-categories__login-icon {
-    margin-left: 15px;
+  &:hover .product-categories__icon--short {
+    display: none;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin-left: 25px;
-    }
+  &:hover .product-categories__icon--long {
+    display: block;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-categories__icon {
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
+  &--long {
+    display: none;
   }
 }

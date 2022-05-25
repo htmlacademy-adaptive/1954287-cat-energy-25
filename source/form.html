@@ -198,7 +198,9 @@
         </fieldset>
 
         <div class="program-form__submit-wrapper program-form__field-group">
-          <button class="program-form__submit button" type="submit">Отправить заявку</button>
+          <button class="program-form__submit button" type="submit">
+            <span>Отправить заявку</span>
+          </button>
 
           <!--  Форма: примечание  -->
           <p class="program-form__note">
@@ -254,7 +256,7 @@
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Мы в Вконтакте</span>
-                  <svg width="28" height="22">
+                  <svg class="social__icon" width="28" height="22">
                     <use xlink:href="img/icons/sprite.svg#icon-vkontakte"></use>
                   </svg>
                 </a>
@@ -262,7 +264,7 @@
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Мы в Ютьюбе</span>
-                  <svg width="28" height="22">
+                  <svg class="social__icon" width="28" height="22">
                     <use xlink:href="img/icons/sprite.svg#icon-youtube"></use>
                   </svg>
                 </a>
@@ -270,7 +272,7 @@
               <li class="social__item">
                 <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Мы в Телеграме</span>
-                  <svg width="28" height="22">
+                  <svg class="social__icon" width="28" height="22">
                     <use xlink:href="img/icons/sprite.svg#icon-telegram"></use>
                   </svg>
                 </a>
@@ -280,9 +282,11 @@
           <!--  Копирайт  -->
           <div class="page-footer__copyright copyright">
             <h2 class="visually-hidden">Копирайт</h2>
-            <p class="copyright__text">HTML Academy</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/logos/logo-htmlacademy.svg" width="27" height="34" alt="Логотип 'HTML Academy'.">
+              <p class="copyright__text">HTML Academy</p>
+              <svg class="copyright__icon" width="27" height="34">
+                <use xlink:href="img/icons/sprite.svg#htmlacademy-logo"></use>
+              </svg>
             </a>
           </div>
         </div>

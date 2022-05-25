@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     padding: 0 30px;
 
@@ -39,6 +40,14 @@
 
 .page-footer__logo-link {
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__copyright {
