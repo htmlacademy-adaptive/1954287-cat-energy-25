@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
     <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
@@ -76,8 +76,8 @@
           </div>
           <div class="promo__image">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/images/promo-can-desktop.webp 1x, img/images/promo-can-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/images/promo-can-tablet.webp 1x, img/images/promo-can-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/images/promo-can-desktop.webp 1x, img/images/promo-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/images/promo-can-tablet.webp 1x, img/images/promo-can-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/images/promo-can-mobile.webp 1x, img/images/promo-can-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/images/promo-can-desktop.png 1x, img/images/promo-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/images/promo-can-tablet.png 1x, img/images/promo-can-tablet@2x.png 2x">
@@ -234,13 +234,17 @@
             <ul class="example__list slider__list">
               <li class="example__item slider__item slider__item--current">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/images/cat-fat-not-mobile.png 1x, img/images/cat-fat-not-mobile@2x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/images/cat-fat-not-mobile.webp 1x, img/images/cat-fat-not-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/images/cat-fat-mobile.webp 1x, img/images/cat-fat-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/images/cat-fat-not-mobile.png 1x, img/images/cat-fat-not-mobile@2x.png 2x">
                   <img class="example__image slider__image slider__image--fat-cat" width="280" height="232" src="img/images/cat-fat-mobile.png" srcset="img/images/cat-fat-mobile@2x.png 2x" alt="Фотография толстого кота">
                 </picture>
               </li>
               <li class="example__item slider__item">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/images/cat-skinny-not-mobile.png 1x, img/images/cat-skinny-not-mobile@2x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/images/cat-skinny-not-mobile.webp 1x, img/images/cat-skinny-not-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/images/cat-skinny-not-mobile.webp 1x, img/images/cat-skinny-not-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/images/cat-skinny-not-mobile.png 1x, img/images/cat-skinny-not-mobile@2x.png 2x">
                   <img class="example__image slider__image slider__image--skinny-cat" width="225" height="232" src="img/images/cat-skinny-not-mobile.png" srcset="img/images/cat-skinny-not-mobile@2x.png 2x" alt="Фотография худого кота">
                 </picture>
               </li>
