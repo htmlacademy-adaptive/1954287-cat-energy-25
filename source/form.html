@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.min.css" rel="stylesheet">>
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon16.svg" type="image/svg+xml">
     <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
     <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
     <script defer src="js/mainNavToggleScript.js"></script>
   </head>
   <body class="page__body">
@@ -31,10 +35,10 @@
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="main-nav__toggle--open" width="24" height="18">
+            <svg class="main-nav__icon-open" width="24" height="18">
               <use xlink:href="img/icons/sprite.svg#icon-menu-burger"></use>
             </svg>
-            <svg class="main-nav__toggle--close" width="20" height="20">
+            <svg class="main-nav__icon-close" width="20" height="20">
               <use xlink:href="img/icons/sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -59,9 +63,9 @@
       </div>
     </header>
 
-    <main class="page-main main-inner--form">
+    <main class="main-inner main-inner--form">
       <!--  Заголовок с описанием  -->
-      <div class="main-inner__header-wrapper--form">
+      <div class="main-inner__header-wrapper main-inner__header-wrapper--form">
         <h1 class="main-inner__title main-inner__title--form">
           Подбор программы
         </h1>
@@ -242,7 +246,7 @@
         </div>
 
         <!--  Ссылки  -->
-        <div class="page-footer__links page-main__container">
+        <div class="page-footer__links">
           <!--  Лого  -->
           <div class="page-footer__logo-title">
             <a class="page-footer__logo-link" href="index.html">

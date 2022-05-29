@@ -2,17 +2,15 @@
 @use "abstracts/variables" as *;
 
 .main-nav {
-  //position: relative;
-
   @media (min-width: $tablet-width) {
     width: calc(440 / 708 * 100%);
   }
 
-  &--closed .main-nav__toggle--close {
+  &--closed .main-nav__icon-close {
     display: none;
   }
 
-  &--opened .main-nav__toggle--open {
+  &--opened .main-nav__icon-open {
     display: none;
   }
 }
@@ -42,7 +40,7 @@
 
   @media (max-width: $mobile-only) {
     position: absolute;
-    top: 67px;
+    top: 66px;
     left: 0;
     right: 0;
 
