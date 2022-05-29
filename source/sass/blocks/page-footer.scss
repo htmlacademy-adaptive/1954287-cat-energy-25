@@ -2,6 +2,8 @@
 @use "abstracts/variables" as *;
 
 .page-footer__links {
+  padding: 0 20px;
+
   background-color: $background-color-secondary;
 
   @media (min-width: $tablet-width) {
